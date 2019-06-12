@@ -9,7 +9,7 @@ void waitForLeftMouseClick();
 
 int main()
 {
-    initwindow(600,325);
+    initwindow(600,400);
 
 
     for (int y = 50; y < 276; y+=25) {
