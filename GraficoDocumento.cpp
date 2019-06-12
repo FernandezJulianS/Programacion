@@ -11,7 +11,6 @@ int main()
 {
     initwindow(600,400);
 
-
      line(35,50,560,50);
      line(35,75,560,75);
      line(35,100,560,100);
@@ -22,7 +21,8 @@ int main()
      line(35,225,560,225);
      line(35,250,560,250);
      line(35,275,560,275);
-    setfillstyle(1,3);
+    
+	setfillstyle(1,3);
     bar(50,275,75,249);
      setfillstyle(1,1);
     bar(200,275,225,225);
