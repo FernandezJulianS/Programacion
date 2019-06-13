@@ -16,11 +16,11 @@ void Menu(){
 switch(a){
 	case 1: MenuVolumen();
 	break;
-	case 2: 
+	case 2: MenuArea(); 
 	break;
-	case 0: cout<<"Ejecucion Finalizada";
+	case 0: cout<<"Ejecucion Finalizada ";
 	break;
-	default:cout<<"Accion Incorrecta\nEjecucion Finalizada";
+	default:cout<<"Accion Incorrecta\nEjecucion Finalizada ";
 }
 system("PAUSE"); // return 0;
 }
@@ -29,4 +29,10 @@ void MenuVolumen(){
 	cout<<"Cual de las dos figuras desea saber el volumen?"<<endl;
 	cout<<"Presione '1', o '2', dependiendo de la figura: ";
 	cin>> figura;
+}
+void MenuArea(){
+	int figura2;
+	cout<<"Cual de las dos figuras desea saber el volumen?"<<endl;
+	cout<<"Presione '1', o '2', dependiendo de la figura: ";
+	cin>> figura2;
 }
