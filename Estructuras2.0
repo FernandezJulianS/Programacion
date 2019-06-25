@@ -1,0 +1,62 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+
+int main()
+{
+ struct estudiante
+ {
+ 	char codigo[12];
+ 	char nombre[30];
+ 	float nota;
+ 	
+  };
+  
+  /*struct estudiante est1;
+  cout<<"ingrese el codigo: ";
+  cin>>est1.codigo;
+  cout<<"ingrese el nombre: ";
+  cin>>est1.nombre;
+  cout<<"ingrese la nota: ";cin.ignore();
+  cin>>est1.nota;
+  
+  cout<<"el codigo del estudiante es: "<<est1.codigo<<endl;
+  cout<<"el nombre del estudiante es: "<<est1.nombre<<endl;
+  cout<<"la nota del estudiantes es: "<<est1.nota<<endl;
+*/
+struct estudiante curso[5];
+for(int i=0;i<5;i++)
+{
+
+cout<<"ingrese codigo"<<i<< ": ";
+cin>>curso[i].codigo;
+cout<<"ingrese nombre"<<i<<": ";
+cin>>curso[i].nombre;
+cout<<"ingrese nota"<<i<<": ";
+cin>>curso[i].nota;
+}
+for(int i=0;i<5;i++)
+{
+	cout<<"el codigo del estudiante"<<i<<"es: "<<curso[i].codigo<<endl;
+	cout<<"el nombre del estudiante"<<i<<"es: "<<curso[i].nombre<<endl;
+	cout<<"el nota del estudiante"<<i<<"es: "<<curso[i].nota<<endl;
+	
+	}
+
+int pos = 0;
+int mayor;
+mayor = curso[0].nota;
+
+for(int i=0;i<5;i++){
+	        if(curso[i].nota>mayor){
+			
+	        	mayor = curso[i].nota;
+	        	pos = i;
+			}
+}
+cout<<"El nombre del estudiante con la mayor nota es: "<<curso[pos].nombre<<endl;
+
+
+	return 0;
+}
